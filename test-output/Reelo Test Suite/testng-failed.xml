@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Reelo Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Reelo Automation Tests(failed)">
+    <classes>
+      <class name="testcases.CampaignTest">
+        <methods>
+          <include name="testCampaignCreation"/>
+          <include name="setup"/>
+          <include name="loginOnce"/>
+        </methods>
+      </class> <!-- testcases.CampaignTest -->
+    </classes>
+  </test> <!-- Reelo Automation Tests(failed) -->
+</suite> <!-- Failed suite [Reelo Test Suite] -->
