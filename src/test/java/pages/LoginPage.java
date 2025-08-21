@@ -42,12 +42,13 @@ public class LoginPage {
 	            WebElement button = driver.findElement(signUpBtn);
 	            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", button);
 	        }
-	        driver.quit();
+	        
 	    }
 	    public void LoginAccount(String username, String password) {
 	    	driver.findElement(Usernamefield).sendKeys(username);
 	    	driver.findElement(passwordfield).sendKeys(password);
 	    	driver.findElement(loginbutton).click();
+	    	
 	    }
 	    
 }

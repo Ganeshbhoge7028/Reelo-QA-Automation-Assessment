@@ -1,57 +1,70 @@
-# Reelo QA Automation Assessment
+# Reelo Automation Campaign – Selenium Java Project
 
-This repository contains automation scripts for the Reelo QA assessment.
-
-## Project Setup
-
-Follow these steps to set up the project locally:
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/Ganeshbhoge7028/Reelo-QA-Automation-Assessment.git
-cd Reelo-QA-Automation-Assessment
-```
-
-### 2. Pull the Latest Changes
-```bash
-git pull origin main
-```
-
-### 3. Configure Your Details
-Update the **config.properties** file with your credentials:
-
-```
-url=https://dev.reelo.io/
-username=Bhoge Ganesh
-email=your email@yopmail.com
-password=YourPassword
-phone=7428723247
-campaignTitle=Automation Campaign
-smsMessage=Hello from Ganesh Bhoge!
-loginusername=youremail@gmail.com
-loginpassword=YourPassword
-```
-
-> **Note:** Replace the above credentials with your actual details before running the automation.
-
-### 4. Run the Tests
-Use your preferred IDE (IntelliJ/Eclipse) or Maven:
-```bash
-mvn clean test
-```
+## Overview
+This project automates the end-to-end workflow of creating and sending a campaign through the Reelo platform using **Selenium, TestNG, and Java**.  
+It includes:
+- Login
+- Campaign Creation
+- Adding Image/Logo
+- Sending SMS  
 
 ---
 
-## Git Workflow
+## Prerequisites
+- **Java 8+**
+- **Maven**
+- **TestNG**
+- **Chrome Browser & ChromeDriver**  
+  (Ensure compatible versions are installed)
 
-### To Commit and Push Changes
+---
+
+## Project Setup
+
+### 1. Clone or Download the Project
 ```bash
-git add .
-git commit -m "Your commit message"
-git push origin main
+git clone <your-repo-url>
 ```
 
-### To Pull Latest Changes
-```bash
-git pull origin main
+### 2. Update Configuration
+Edit the `config.properties` file located in the project root:
+
+```properties
+url=https://dev.reelo.io/
+username=Your Name
+email=youremail@example.com
+password=YourPassword123
+phone=9999999999
+campaignTitle=Automation Campaign
+smsMessage=Hello from Your Name!
+loginusername=youremail@example.com
+loginpassword=YourPassword123
+filePath=C:\Users\YourName\Downloads\LogoImage.png
+SMSMassage=Hello, this is from Your Name
 ```
+
+> **Note**: Replace all sample values with your own test credentials.
+
+---
+
+## How to Run
+
+1. Open the project in IntelliJ or Eclipse.
+2. Locate `testng.xml`.
+3. Right-click → **Run 'testng.xml'**.
+
+---
+
+## Features
+- Login to Reelo
+- Campaign creation with:
+  - Title
+  - Logo/Image upload
+  - SMS message
+- End-to-end flow automation
+
+---
+
+## Contact
+For any queries, please contact:  
+`youremail@example.com`

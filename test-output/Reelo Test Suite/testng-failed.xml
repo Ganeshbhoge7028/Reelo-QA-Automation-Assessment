@@ -8,6 +8,7 @@
           <include name="testCampaignCreation"/>
           <include name="setup"/>
           <include name="loginOnce"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- testcases.CampaignTest -->
     </classes>
